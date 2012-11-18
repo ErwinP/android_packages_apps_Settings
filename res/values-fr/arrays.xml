@@ -324,8 +324,16 @@
 
     <!-- Profile mode options. -->
     <string-array name="profile_connection_entries">
-        <item>Actif</item>
         <item>Inactif</item>
+        <item>Actif</item>
+    </string-array>
+
+    <!-- Volume Overlay options. -->
+    <string-array name="volume_overlay_entries">
+        <item>Simple</item>
+        <item>Extensible</item>
+        <item>Etendu</item>
+        <item>Caché</item>
     </string-array>
 
     <!-- **** CYANOGENMOD EDITS END **** -->

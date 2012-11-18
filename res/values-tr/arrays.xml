@@ -353,11 +353,11 @@
 
     <string-array name="entries_flash_widget">
         <item>Normal</item>
-        <item>Parlak / Sönük Işık</item>
+        <item>Parlak</item>
     </string-array>
 
     <string-array name="haptic_feedback_entries">
-        <item>Genel ayarlar</item>
+        <item>Genel ayarları kullan</item>
         <item>Etkin</item>
         <item>Pasif</item>
     </string-array>
@@ -407,10 +407,18 @@
         <item>Etkin</item>
     </string-array>
 
-    <!-- **** CYANOGENMOD EDITS END **** -->
+   <!-- Volume Overlay options. -->
+    <string-array name="volume_overlay_entries">
+        <item>Tek</item>
+        <item>Genişletilebilir</item>
+        <item>Genişletilmiş</item>
+        <item>Hiçbiri</item>
+    </string-array>
 
     <string-array name="location_entries_gps_source">
         <item>Dahili GPS Kullan</item>
     </string-array>
+
+ <!-- **** CYANOGENMOD EDITS END **** -->
 
 </resources>

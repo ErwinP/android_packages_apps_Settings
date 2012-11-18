@@ -88,7 +88,7 @@ public class AnonymousStats extends SettingsPreferenceFragment
                 mOkDialog = new AlertDialog.Builder(getActivity()).setMessage(
                         getActivity().getResources().getString(R.string.anonymous_statistics_warning))
                         .setTitle(R.string.anonymous_statistics_warning_title)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIconAttribute(android.R.attr.alertDialogIcon)
                         .setPositiveButton(android.R.string.yes, this)
                         .setNeutralButton(getString(R.string.anonymous_learn_more), this)
                         .setNegativeButton(android.R.string.no, this)
@@ -100,7 +100,7 @@ public class AnonymousStats extends SettingsPreferenceFragment
             }
         } else if (preference == mViewStats) {
             // Display the stats page
-            Uri uri = Uri.parse("http://stats.cyanogenmod.com");
+            Uri uri = Uri.parse("http://stats.cyanogenmod.org");
             startActivity(new Intent(Intent.ACTION_VIEW, uri));
         } else {
             // If we didn't handle it, let preferences handle it.
@@ -130,7 +130,7 @@ public class AnonymousStats extends SettingsPreferenceFragment
         } else if (which == DialogInterface.BUTTON_NEGATIVE){
             mEnableReporting.setChecked(false);
         } else {
-            Uri uri = Uri.parse("http://www.cyanogenmod.com/blog/cmstats-what-it-is-and-why-you-should-opt-in");
+            Uri uri = Uri.parse("http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in");
             startActivity(new Intent(Intent.ACTION_VIEW, uri));
         }
     }

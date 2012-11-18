@@ -286,26 +286,6 @@
     <!-- Hint text for network prefix length -->
     <string name="wifi_network_prefix_length_hint" translatable="false">24</string>
 
-    <!-- Wi-Fi p2p / Wi-Fi Direct settings -->
-    <!-- Used in the 1st-level settings screen to launch Wi-fi Direct settings [CHAR LIMIT=25] -->
-    <string name="wifi_p2p_settings_title">Wi-Fi direct</string>
-    <!-- Summary for Wi-fi Direct settings item in the 1st-level settings screen [CHAR LIMIT=50]-->
-    <string name="wifi_p2p_settings_summary">Set up peer-to-peer connectivity</string>
-    <string name="wifi_p2p_device_info">Device information</string>
-    <string name="wifi_p2p_wps_setup">Wi-Fi protected setup</string>
-    <string name="wifi_p2p_wps_pin">Type PIN</string>
-    <string name="wifi_p2p_persist_network">Remember this connection</string>
-    <!-- Menu option to discover peers-->
-    <string name="wifi_p2p_menu_search">Search</string>
-    <!-- Menu option to create a group-->
-    <string name="wifi_p2p_menu_create_group">Create group</string>
-    <!-- Menu option to remove a group-->
-    <string name="wifi_p2p_menu_remove_group">Remove group</string>
-    <!-- Menu option to Wi-Fi p2p advanced settings -->
-    <string name="wifi_p2p_menu_advanced">Advanced</string>
-    <!-- Title for available p2p devices -->
-    <string name="wifi_p2p_available_devices">Available devices</string>
-
     <!-- Wifi AP settings-->
     <!-- Label for wifi tether checkbox. Toggles Access Point on/off -->
     <string name="wifi_tether_checkbox_text">Portable Wi-Fi hotspot</string>
@@ -648,6 +628,10 @@
     <string name="dtmf_tone_enable_title">Dial pad touch tones</string>
     <!-- Sound settings screen, setting check box label -->
     <string name="sound_effects_enable_title">Touch sounds</string>
+    <!-- Vibrator settings screen, setting check box label -->
+    <string name="vibrator_type_ringer">Calls</string>
+    <!-- Vibrator settings screen, setting check box label -->
+    <string name="vibrator_type_notification">Notifications</string>
     <!-- Sound settings screen, setting check box label -->
     <string name="lock_sounds_enable_title">Screen lock sound</string>
     <!-- Sound settings screen, setting check box label -->
@@ -702,6 +686,10 @@
     <string name="start_time_title">Start</string>
     <string name="end_time_title">End</string>
 
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_restore_title">Safe headset volume</string>
+    <string name="safe_headset_restore_summary">Prevent loud volume levels when headset is first plugged in</string>
+
     <!-- Display settings --><skip/>
     <!-- Sound & display settings screen, section header for settings related to display -->
     <string name="display_settings">Display</string>
@@ -750,8 +738,14 @@
     <string name="summary_font_size" translatable="false">%1$s</string>
     <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking font size -->
     <string name="dialog_title_font_size">Font size</string>
-    <!-- Display settings screen, battery light repeat pulsing title -->
-    <string name="battery_pulse_title">Pulse low battery light</string>
+
+    <!-- Battery light settings #CM -->
+    <string name="battery_light_title">Battery light</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Fully charged</string>
 
     <!-- Backlight #CM -->
     <string name="backlight_title">Automatic backlight</string>
@@ -797,10 +791,13 @@
     <string name="notification_pulse_title">Notification light</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Applications</string>
-    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_phonelist_title">Phone</string>
     <string name="notification_light_use_custom">Use custom values</string>
     <string name="notification_light_enabled">Enabled</string>
     <string name="notification_light_disabled">Disabled</string>
+    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
@@ -852,20 +849,28 @@
     <string name="combined_bar_auto_hide_title">Auto hide</string>
     <string name="combined_bar_auto_hide_summary">Allow combined bar to hide when showing a fullscreen app</string>
 
+    <!-- Navigation Bar #CM -->
+    <string name="navigation_bar_title">Navigation bar</string>
+
+    <string name="navigation_bar_help_text">1 - To begin editing, tap the lock icon\n\n2 - Tap any button to assign or change functionality\n\n3 - Long press any button to rearrange the order\n\n4 - To save, tap the lock icon again\n\n5 - To restore system default, tap the reset button\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Actions can only be assigned to one button at a time\n\n&#8226; The home button cannot be re-assigned\n\n&#8226; Side buttons cannot be rearranged</string>
+    <string name="navigation_bar_tips_title">Quick tips</string>
+    <string name="navigation_bar_reset_message">Delete current settings and restore to default?</string>
+    <string name="navigation_bar_save_message">Navigation bar settings saved</string>
+    <string name="navigation_bar_reset_toast">Navigation bar reset to default</string>
+
     <!-- Power Widget #CM -->
     <string name="power_widget_title">Power widget</string>
-    <string name="title_expanded_widget">Show power widget</string>
-    <string name="summary_expanded_widget">Show the power widget in the notification drawer</string>
-    <string name="title_expanded_hide_onchange">Hide on change</string>
-    <string name="summary_expanded_hide_onchange">Hide the notification drawer after toggling a widget button</string>
-    <string name="title_expanded_hide_indicator">Hide indicator</string>
-    <string name="summary_expanded_hide_indicator">Hide the power widget indicators</string>
+    <string name="power_widget_behavior">Widget behavior</string>
+    <string name="power_widget_appearance">Widget appearance</string>
+    <string name="title_expanded_widget">Power widget</string>
+    <string name="title_expanded_hide_onchange">Close drawer on change</string>
+    <string name="title_expanded_hide_indicator">Hide indicators</string>
     <string name="title_expanded_hide_scrollbar">Hide scrollbar</string>
-    <string name="summary_expanded_hide_scrollbar">Hide the scrollbar when more than the maximum number of widget buttons are present</string>
     <string name="title_widget_picker">Widget buttons</string>
-    <string name="summary_widget_picker">Select which buttons to display in the power widget</string>
+    <string name="summary_widget_picker">View or change the displayed buttons</string>
     <string name="title_widget_order">Widget button order</string>
-    <string name="summary_widget_order">Select the order of the buttons in the power widget</string>
+    <string name="summary_widget_order">View or change the order of the buttons</string>
     <string name="title_buttons">Buttons</string>
     <string name="title_toggle_wifi">Toggle Wi-Fi</string>
     <string name="title_toggle_bluetooth">Toggle Bluetooth</string>
@@ -874,9 +879,9 @@
     <string name="title_toggle_brightness">Toggle Brightness</string>
     <string name="title_toggle_sync">Toggle Sync</string>
     <string name="title_toggle_wifiap">Toggle Wi-Fi AP</string>
-    <string name="title_toggle_screentimeout">Toggle Screentimeout</string>
-    <string name="title_toggle_mobiledata">Toggle Mobiledata</string>
-    <string name="title_toggle_lockscreen">Toggle Lockscreen</string>
+    <string name="title_toggle_screentimeout">Toggle Screen timeout</string>
+    <string name="title_toggle_mobiledata">Toggle Mobile data</string>
+    <string name="title_toggle_lockscreen">Toggle Lock screen</string>
     <string name="title_toggle_networkmode">Toggle 2G/3G</string>
     <string name="title_toggle_autorotate">Toggle Orientation</string>
     <string name="title_toggle_airplane">Toggle Airplane mode</string>
@@ -889,25 +894,19 @@
     <string name="title_toggle_wimax">Toggle WiMAX</string>
     <string name="title_button_modes">Button modes</string>
     <string name="pref_brightness_mode_title">Brightness modes</string>
-    <string name="pref_brightness_mode_summary">Choose how the brightness button changes modes</string>
+    <string name="pref_brightness_mode_summary">View or change the Brightness button modes</string>
     <string name="cm_brightness_mode_auto">Auto</string>
     <string name="cm_brightness_mode_dim">Dim</string>
     <string name="pref_network_mode_title">Network modes</string>
-    <string name="pref_network_mode_summary">Choose how the NetworkMode button changes modes</string>
-    <string name="pref_screentimeout_mode_title">Screentimeout modes</string>
-    <string name="pref_screentimeout_mode_summary">Choose how the Screentimeout button changes modes</string>
+    <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
     <string name="pref_ring_mode_title">Sound modes</string>
-    <string name="pref_ring_mode_summary">Choose how the sound button changes modes</string>
+    <string name="pref_ring_mode_summary">View or change the Sound button modes</string>
     <string name="cm_sound_mode_silent">Silent</string>
     <string name="cm_sound_mode_vibrate">Vibrate</string>
     <string name="cm_sound_mode_sound">Sound</string>
-    <string name="cm_sound_mode_soundVibrate">Sound+Vibrate</string>
+    <string name="cm_sound_mode_soundVibrate">Sound + Vibrate</string>
     <string name="pref_flash_mode_title">Flash mode</string>
-    <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
-
-    <!-- Power Widget, Haptic feedback #CM -->
     <string name="expanded_haptic_feedback_title">Haptic feedback</string>
-    <string name="expanded_haptic_feedback_summary">Enable/disable haptic feedback</string>
 
     <!-- Status bar #CM -->
     <string name="combined_status_bar_title">@string/status_bar_title</string>
@@ -918,6 +917,7 @@
     <string name="status_bar_show_clock_summary">Show the clock in the status bar</string>
     <string name="status_bar_am_pm_title">AM/PM style</string>
     <string name="status_bar_am_pm_summary">Display style of AM/PM next to clock</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
     <string name="status_bar_battery_title">Battery status style</string>
     <string name="status_bar_battery_summary">Display style of battery status</string>
     <string name="status_bar_toggle_brightness">Brightness control</string>
@@ -933,15 +933,80 @@
 
     <!-- Lock Screen Shortcuts -->
     <string name="lockscreen_target_info">Drag the slider to targets to assign shortcuts</string>
-    <string name="lockscreen_target_title">Lock screen shortcuts</string>
-    <string name="lockscreen_target_summary">Add or configure custom lock screen shortcuts</string>
+    <string name="lockscreen_target_title">Slider shortcuts</string>
+    <string name="lockscreen_target_summary">View or change custom lock screen shortcuts</string>
     <string name="lockscreen_target_reset">Lock screen shortcuts reset to default</string>
     <string name="lockscreen_target_save">Lock screen shortcuts saved</string>
     <string name="lockscreen_target_reset_title">Reset</string>
-    <string name="lockscreen_target_reset_message">Delete all user created Lock screen shortcuts and restore to default?</string>
+    <string name="lockscreen_target_reset_message">Delete all user created lock screen shortcuts and restore to default?</string>
     <string name="lockscreen_target_empty">Empty</string>
-    <string name="lockscreen_target_edit_title">Edit shortcut</string>
-    <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and icon</string>
+    <string name="lockscreen_target_edit_title">Edit shortcut and icon</string>
+    <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and the associated icon</string>
+
+    <!-- Lock Screen Weather -->
+    <string name="lockscreen_weather_title">Weather</string>
+    <string name="lockscreen_weather_summary">Display weather information on the lock screen</string>
+    <string name="lockscreen_weather_enabled">Enabled</string>
+    <string name="weather_enable">Display weather</string>
+    <string name="weather_source">Yahoo! Weather</string>
+    <string name="weather_use_custom_location">Use custom location</string>
+    <string name="weather_geolocated">Geolocated using network</string>
+    <string name="weather_custom_location_dialog_title">Enter location</string>
+    <string name="weather_custom_location_hint">City, State/Country</string>
+    <string name="weather_custom_location_title">Location</string>
+    <string name="weather_show_location_title">Show location</string>
+    <string name="weather_show_timestamp_title">Show timestamp</string>
+    <string name="weather_refresh_interval">Update interval</string>
+    <string name="weather_use_metric">Use metric</string>
+    <string name="weather_retrieve_location_dialog_title">Cannot retrieve location!</string>
+    <string name="weather_retrieve_location_dialog_message">Network geolocation is disabled.\n\nSet a custom location or enable network location</string>
+    <string name="weather_retrieve_location_dialog_enable_button">Enable</string>
+    <string name="weather_invert_lowhigh">Invert low/high temperatures</string>
+    <string name="weather_progress_title">Verifying location</string>
+
+    <!-- Lock screen Weather - Update frequency -->
+    <string name="weather_refresh_manual">Manual</string>
+    <string name="weather_refresh_30min">30 minutes</string>
+    <string name="weather_refresh_60min">60 minutes</string>
+    <string name="weather_refresh_2hrs">2 hours</string>
+    <string name="weather_refresh_4hrs">4 hours</string>
+    <string name="weather_refresh_6hrs">6 hours</string>
+    <string name="weather_refresh_8hrs">8 hours</string>
+
+    <!-- Lock screen Calendar -->
+    <string name="lockscreen_calendar_title">Calendar</string>
+    <string name="lockscreen_calendar_summary">Display the next calendar event on the lock screen</string>
+    <string name="lockscreen_calendar_enabled">Enabled</string>
+    <string name="calendar_title">Display next event</string>
+    <string name="calendars_title">Event calendars</string>
+    <string name="calendars_summary">Find events from these calendars</string>
+    <string name="calendar_reminders_only_title">Reminders only</string>
+    <string name="calendar_reminders_only_summary">Show only events with reminders</string>
+    <string name="calendar_lookahead_title">Event lookahead</string>
+    <string name="calendar_show_location_title">Event location</string>
+    <string name="calendar_show_description_title">Event description</string>
+
+    <!-- Lock screen calendar - lookahead -->
+    <string name="calendar_lookahead_3hrs">3 hours</string>
+    <string name="calendar_lookahead_6hrs">6 hours</string>
+    <string name="calendar_lookahead_12hrs">12 hours</string>
+    <string name="calendar_lookahead_1day">1 day</string>
+    <string name="calendar_lookahead_3days">3 days</string>
+    <string name="calendar_lookahead_1wk">1 week</string>
+
+    <!-- Lock screen calendar - event metadata -->
+    <string name="calendar_metadata_none">Do not show</string>
+    <string name="calendar_metadata_first_line">Show first line</string>
+    <string name="calendar_metadata_all">Show all</string>
+
+    <!-- Lock screen background -->
+    <string name="lockscreen_custom_background_title">Background</string>
+    <string name="lockscreen_custom_background_dialog_title">Choose color</string>
+    <string name="lockscreen_background_result_successful">Background changed</string>
+    <string name="lockscreen_background_result_not_successful">Background not changed</string>
+    <string name="lockscreen_background_color_fill">Color fill</string>
+    <string name="lockscreen_background_custom_image">Custom image</string>
+    <string name="lockscreen_background_default_wallpaper">Default wallpaper</string>
 
     <!-- Wallpaper settings title [CHAR LIMIT=30] -->
     <string name="wallpaper_settings_title">Wallpaper</string>
@@ -985,9 +1050,13 @@
     <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_connectionoverrides_title">Connection overrides</string>
     <string name="profile_volumeoverrides_title">Volume overrides</string>
+    <string name="profile_vibratoroverrides_title">Vibrator overrides</string>
     <string name="connection_state_disabled">Disable</string>
     <string name="connection_state_enabled">Enable</string>
     <string name="volume_override_summary">Set to</string>
+    <string name="vibrator_state_disabled">Disable</string>
+    <string name="vibrator_state_enabled">Enable</string>
+    <string name="vibrator_state_silent">Only when silent</string>
 
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profiles</string>
@@ -1035,6 +1104,13 @@
     <string name="profile_lockmode_default_summary">Use system default</string>
     <string name="profile_lockmode_insecure_summary">Use insecure lock screen</string>
     <string name="profile_lockmode_disabled_summary">Lock screen is disabled</string>
+    <string name="profile_airplanemode_title">Airplane mode</string>
+    <string name="profile_airplanemode_default">Default</string>
+    <string name="profile_airplanemode_enabled">Enabled</string>
+    <string name="profile_airplanemode_disabled">Disabled</string>
+    <string name="profile_airplanemode_default_summary">Use system default</string>
+    <string name="profile_airplanemode_enabled_summary">Airplane mode is enabled</string>
+    <string name="profile_airplanemode_disabled_summary">Airplane mode is disabled</string>
 
     <string name="profile_disable_screen_lock_summary">Disable lock screen security while this profile is active</string>
 
@@ -1065,11 +1141,11 @@
     <!-- Security settings screen, setting option summary to change screen timeout -->
     <string name="lock_after_timeout_summary"><xliff:g id="timeout_string">%1$s</xliff:g> after sleep</string>
     <!-- Text shown next to checkbox for showing owner info on LockScreen [CHAR LIMIT=50]-->
-    <string name="show_owner_info_on_lockscreen_label">Show owner info on lock screen</string>
+    <string name="show_owner_info_on_lockscreen_label">Show owner info</string>
     <!-- Text shown for title of owner info setting [CHAR LIMIT=20]-->
     <string name="owner_info_settings_title">Owner info</string>
     <!-- Text shown for summary of owner info setting [CHAR LIMIT=40]-->
-    <string name="owner_info_settings_summary"></string>
+    <string name="owner_info_settings_summary">Display owner information on lock screen</string>
     <!-- Hint text shown in owner info edit text [CHAR LIMIT=50] -->
     <string name="owner_info_settings_edit_text_hint">Type text to display on the lock screen</string>
     <!-- Main Settings screen setting option title for the item to take you to the location screen -->
@@ -1107,7 +1183,7 @@
     <string name="slide_lock_delay_1m">1 minute</string>
     <string name="slide_lock_delay_5m">5 minutes</string>
     <string name="slide_lock_delay_10m">10 minutes</string>
-    <string name="slide_lock_delay_30m">30 mminutes</string>
+    <string name="slide_lock_delay_30m">30 minutes</string>
 
     <!-- Title of the preferences category for preference items to control encryption -->
     <string name="crypt_keeper_settings_title">Encryption</string>
@@ -2124,6 +2200,26 @@
     <string name="radio_info_data_attempts_label">Data attempts:</string>
     <!-- Radio Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
 
+    <!-- Wi-Fi p2p / Wi-Fi Direct settings -->
+    <!-- Used in the 1st-level settings screen to launch Wi-fi Direct settings [CHAR LIMIT=25] -->
+    <string name="wifi_p2p_settings_title">Wi-Fi direct</string>
+    <!-- Summary for Wi-fi Direct settings item in the 1st-level settings screen [CHAR LIMIT=50]-->
+    <string name="wifi_p2p_settings_summary">Set up peer-to-peer connectivity</string>
+    <string name="wifi_p2p_device_info">Device information</string>
+    <string name="wifi_p2p_wps_setup">Wi-Fi protected setup</string>
+    <string name="wifi_p2p_wps_pin">Type PIN</string>
+    <string name="wifi_p2p_persist_network">Remember this connection</string>
+    <!-- Menu option to discover peers-->
+    <string name="wifi_p2p_menu_search">Search</string>
+    <!-- Menu option to create a group-->
+    <string name="wifi_p2p_menu_create_group">Create group</string>
+    <!-- Menu option to remove a group-->
+    <string name="wifi_p2p_menu_remove_group">Remove group</string>
+    <!-- Title for available p2p devices -->
+    <string name="wifi_p2p_available_devices">Available devices</string>
+    <string name="wifi_p2p_on_summary">Turn on wifi direct</string>
+    <string name="wifi_p2p_settings">Wifi direct settings</string>
+
     <string name="radio_info_gprs_service_label">GPRS service:</string>
     <!-- Radio Info screen. Label for a status item. Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radio_info_roaming_label">Roaming:</string>
@@ -2661,6 +2757,17 @@
     <!-- Tethering help button - calls up a web view with general tethering info -->
     <string name="tethering_help_button_text">Help</string>
 
+    <!-- Advanced tethering settings -->
+    <string name="tethering_advanced_text">Advanced</string>
+    <string name="tethering_lease_time_text">DHCP lease time</string>
+    <string name="dhcp_lease_30mn">30 minutes</string>
+    <string name="dhcp_lease_1h">1 hour (default)</string>
+    <string name="dhcp_lease_2h">2 hours</string>
+    <string name="dhcp_lease_4h">4 hours</string>
+    <string name="dhcp_lease_6h">6 hours</string>
+    <string name="dhcp_lease_12h">12 hours</string>
+    <string name="dhcp_lease_24h">24 hours</string>
+
     <!-- Wireless controls, item title to go into the network settings -->
     <string name="network_settings_title">Mobile networks</string>
 
@@ -2814,6 +2921,8 @@
     <string name="lockpattern_too_many_failed_confirmation_attempts_header">Too many incorrect attempts!</string>
     <!-- Security & location settings screen, change unlock pattern screen countdown hint on bottom of screen after too many incorrect attempts -->
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer">Try again in <xliff:g id="number">%d</xliff:g> seconds.</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the device shows the slider widgets before the unlock option [CHAR LIMIT=28]-->
+    <string name="lockpattern_settings_enable_lock_before_unlock">Show widgets before unlock</string>
 
     <!-- ChooseLockPatternTutorial --> <skip />
     <!-- ChooseLockPatternTutorial, button labels: This is to cancel the tutorial -->
@@ -3164,6 +3273,9 @@ found in the list of installed apps.</string>
     <string name="pointer_settings_category">Mouse/trackpad</string>
     <!-- On Language & input settings screen, setting summary. Setting for mouse pointer speed. [CHAR LIMIT=35] -->
     <string name="pointer_speed">Pointer speed</string>
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 
     <!-- User dictionary settings --><skip />
     <!-- User dictionary settings, The titlebar text of the User dictionary settings screen. -->
@@ -4101,6 +4213,8 @@ found in the list of installed apps.</string>
     <string name="data_usage_menu_show_wifi">Show Wi-Fi usage</string>
     <!-- Title for checkbox menu option to show Ethernet data usage. [CHAR LIMIT=32] -->
     <string name="data_usage_menu_show_ethernet">Show Ethernet usage</string>
+    <!-- Title for checkbox menu option to enable linear chart. [CHAR LIMIT=32] -->
+    <string name="data_usage_menu_linear_chart">Linear chart</string>
     <!-- Title for option to change data usage cycle day. [CHAR LIMIT=32] -->
     <string name="data_usage_change_cycle">Change cycle\u2026</string>
     <!-- Body of dialog prompting user to change numerical day of month that data usage cycle should reset. [CHAR LIMIT=64] -->
@@ -4362,5 +4476,38 @@ found in the list of installed apps.</string>
     <string name="profile_write_success">Tag successfully written</string>
     <string name="profile_write_failed">Tag writing failed!</string>
     <string name="profile_selected">Profile selected: %1$s</string>
-    <string name="profile_nfc_text">Writing a profile to an NFC tag allows you to tap the tag to select that profile. Tapping a second time will select the previously selected profile.</string>
+    <string name="profile_nfc_text">Writing a profile to a NFC tag allows for tapping the tag to select the profile. Tapping a second time will select the previously selected profile.</string>
+    <string name="profile_unknown_nfc_tag">Unknown profile</string>
+    <string name="profile_add_nfc_text">This NFC tag refers to an unknown profile. Attaching this NFC tag to an existing profile will allow for selecting the profile in the future.</string>
+    <string name="profile_select">Select profile</string>
+
+    <!-- Stylus Icon -->
+    <string name="stylus_icon_enabled_title">Show icon when using stylus</string>
+    <string name="stylus_icon_enabled_summary">Show the pointer icon when hovering or drawing with the stylus</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
+
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display number of pending notifications on the status bar</string>
+
+    <string name="increasing_ring_title">Ascending ringtone</string>
+    <!-- Sound settings screen, the caption of the checkbox for making incoming calls increase in volume -->
+    <string name="checkbox_increasing_ring">Enable</string>
+    <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
+    <string name="increasing_ring_min_volume_title">Ringing start volume</string>
+    <string name="increasing_ring_volume_notice">Notice:\nAs the start volume is set higher than the ringer volume, the ring tone will be played using the ringer volume.</string>
+    <string name="increasing_ring_interval_title">Increase interval</string>
+    <string name="increasing_ring_interval_eachring">On each ring</string>
+    <string name="increasing_ring_interval_half_second">0.5 seconds</string>
+    <string name="increasing_ring_interval_1second">1 second</string>
+    <string name="increasing_ring_interval_2seconds">2 seconds</string>
+    <string name="increasing_ring_interval_3seconds">3 seconds</string>
+    <string name="increasing_ring_interval_5seconds">5 seconds</string>
+    <string name="increasing_ring_interval_10seconds">10 seconds</string>
+
+    <!-- CM Updater -->
+    <string name="cmupdate_settings_title">CyanogenMod updates</string>
+    <string name="cmupdate_settings_summary">Check for, view or install available updates</string>
 </resources>

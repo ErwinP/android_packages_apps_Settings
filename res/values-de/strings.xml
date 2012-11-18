@@ -148,7 +148,7 @@
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="3040361003987241057">"Eine App auf Ihrem Telefon versucht, Bluetooth zu aktivieren und Ihr Telefon für <xliff:g id="TIMEOUT">%1$d</xliff:g> Sekunden für andere Telefone sichtbar zu machen. Möchten Sie dies zulassen?"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="7254712987802497615">"Eine App auf Ihrem Tablet versucht, Bluetooth zu aktivieren und Ihr Tablet für andere Geräte erkennbar zu machen. Zulassen?"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="3947789545028519103">"Eine App auf Ihrem Telefon versucht, Bluetooth zu aktivieren und Ihr Telefon für andere Geräte sichtbar zu machen. Möchten Sie dies zulassen?"</string>
-    <string name="bluetooth_turning_on" msgid="4850574877288036646">"Bluetooth aktivieren?"</string>
+    <string name="bluetooth_turning_on" msgid="4850574877288036646">"Bluetooth wird aktiviert..."</string>
     <string name="bluetooth_turning_off" msgid="2337747302892025192">"Bluetooth wird deaktiviert..."</string>
     <string name="bluetooth_auto_connect" msgid="40711424456733571">"Automatische Verbindung"</string>
     <string name="bluetooth_connection_permission_request" msgid="4747918249032890077">"Bluetooth-Verbindungsanfrage"</string>
@@ -492,7 +492,7 @@
     <string name="wifi_settings_category" msgid="2810363951104753710">"WLAN-Einstellungen"</string>
     <string name="wifi_settings_title" msgid="4351120897298124250">"WLAN"</string>
     <string name="wifi_settings_summary" msgid="668767638556052820">"WLAN-Zugangspunkte festlegen und verwalten"</string>
-    <string name="wifi_starting" msgid="6716593470710880000">"WLAN aktivieren?"</string>
+    <string name="wifi_starting" msgid="6716593470710880000">"WLAN wird aktiviert..."</string>
     <string name="wifi_stopping" msgid="244864762599017659">"WLAN wird deaktiviert..."</string>
     <string name="wifi_error" msgid="3207971103917128179">"Fehler"</string>
     <string name="wifi_in_airplane_mode" msgid="8652520421778203796">"Im Flugmodus"</string>
@@ -578,7 +578,6 @@
     <string name="wifi_p2p_menu_search" msgid="7189970585393813135">"Suchen"</string>
     <string name="wifi_p2p_menu_create_group" msgid="7595229161883902082">"Gruppe erstellen"</string>
     <string name="wifi_p2p_menu_remove_group" msgid="4844634506540667517">"Gruppe entfernen"</string>
-    <string name="wifi_p2p_menu_advanced" msgid="2578792521809265949">"Erweitert"</string>
     <string name="wifi_p2p_available_devices" msgid="5943352520059654483">"Verfügbare Geräte"</string>
     <string name="wifi_tether_checkbox_text" msgid="6961605862058056788">"Mobiler WLAN-Hotspot"</string>
     <string name="wifi_tether_enabled_subtext" msgid="8948641212931906143">"Mobiler Hotspot <xliff:g id="NETWORK_SSID">%1$s</xliff:g> aktiv"</string>
@@ -607,6 +606,8 @@
     <string name="dock_settings_summary" msgid="455802113668982481">"Audioeinstellungen für angeschlossenes Dock"</string>
     <string name="dtmf_tone_enable_title" msgid="8533399267725365088">"Wähltastentöne"</string>
     <string name="sound_effects_enable_title" msgid="1171590821131077296">"Töne bei Berührung"</string>
+    <string name="vibrator_type_ringer">Anrufe</string>
+    <string name="vibrator_type_notification">Benachrichtigungen</string>
     <string name="lock_sounds_enable_title" msgid="450098505659399520">"Ton bei Displaysperre"</string>
     <string name="haptic_feedback_enable_title" msgid="2438293710530828760">"Bei Berührung vibrieren"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Geräuschunterdrückung"</string>
@@ -936,6 +937,9 @@
     <string name="lockpattern_settings_help_how_to_record" msgid="2614673439060830433">"Zeichnen eines Entsperrungsmusters"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_header" msgid="819903817323783498">"Zu viele fehlgeschlagene Versuche!"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer" msgid="6759029360597122873">"In <xliff:g id="NUMBER">%d</xliff:g> Sekunden erneut versuchen."</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the dev
+ice shows the slider widgets before the unlock option [CHAR LIMIT=28]-->
+    <string name="lockpattern_settings_enable_lock_before_unlock">Zeige Widgets vor Entsperren</string>
     <string name="skip_button_label" msgid="8680422740354436943">"Abbrechen"</string>
     <string name="next_button_label" msgid="8890792540116568321">"Weiter"</string>
     <string name="lock_title" product="tablet" msgid="2909697418179419990">"Sichern Ihres Tablets"</string>
@@ -1473,6 +1477,7 @@
     <string name="data_usage_menu_restrict_background" msgid="1989394568592253331">"Hintergrunddaten"</string>
     <string name="data_usage_menu_split_4g" msgid="5322857680792601899">"4G-Nutzung separat anzeigen"</string>
     <string name="data_usage_menu_show_wifi" msgid="8266875319417201085">"WLAN anzeigen"</string>
+    <string name="data_usage_menu_linear_chart">Lineare Skala</string>
     <string name="data_usage_menu_show_ethernet" msgid="5181361208532314097">"Ethernet-Nutzung anzeigen"</string>
     <string name="data_usage_change_cycle" msgid="7776556448920114866">"Zyklus ändern..."</string>
     <string name="data_usage_pick_cycle_day" msgid="4470796861757050966">"Tag, an dem Datenverbrauchszyklus zurückgesetzt wird:"</string>
@@ -1655,16 +1660,21 @@
     <string name="combined_bar_auto_hide_title">Automatisch verstecken</string>
     <string name="combined_bar_auto_hide_summary">Erlaube es der kombinierten Leiste sich zu verstecken, wenn eine Vollbild-App gezeigt wird</string>
 
+    <!-- Navigation Bar #CM -->
+    <string name="navigation_bar_title">Navigationsleiste</string>
+    <string name="navigation_bar_help_text">1 - Schloss-Icon berühren, um zu beginnen\n\n2 - Eine Schaltfläche berühren, um ihr eine Funktion zuzuweisen oder diese zu ändern\n\n3 - Eine Schaltfläche gedrückt halten, um sie zu verschieben\n\n4 - Schloss-Icon erneut berühren, um die Änderungen zu speichern\n\n5 - Reset-Icon berühren, um die Vorgaben wiederherzustellen\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Eine Funktion kann nur einer Schaltfläche gleichzeitig zugewiesen werden\n\n&#8226; Die Funktion der Home-Schaltfläche kann nicht verändert werden\n\n&#8226; Die seitlichen Schaltflächen können nicht verschoben werden</string>
+    <string name="navigation_bar_tips_title">Schnellhilfe</string>
+    <string name="navigation_bar_reset_message">Die Vorgaben der Navigationsleiste wiederherstellen?</string>
+    <string name="navigation_bar_save_message">Die Einstellungen der Navigationsleiste wurden gespeichert</string>
+    <string name="navigation_bar_reset_toast">Die Vorgaben der Navigationsleiste wurden wiederhergestellt</string>
+
     <!-- Power Widget #CM -->
     <string name="power_widget_title">Energie-Widget</string>
     <string name="title_expanded_widget">Benachr.-Energiesteuerung</string>
-    <string name="summary_expanded_widget">Schaltflächen für Energiesteuerung in aufgeklappter Benachrichtigungsanzeige</string>
     <string name="title_expanded_hide_onchange">Nach Änd. verbergen</string>
-    <string name="summary_expanded_hide_onchange">Die Benachrichtigungsanzeige sofort wieder verbergen, nachdem eine Änderung an der Energiesteuerung vorgenommen wurde</string>
     <string name="title_expanded_hide_indicator">Status verstecken</string>
-    <string name="summary_expanded_hide_indicator">Verstecke die Statusanzeige unter den Schaltflächen</string>
     <string name="title_expanded_hide_scrollbar">Scrollbar verstecken</string>
-    <string name="summary_expanded_hide_scrollbar">Die Scrollbar verstecken, wenn mehr Schaltflächen vorhanden sind als maximal möglich</string>
     <string name="title_widget_picker">Schaltflächen</string>
     <string name="summary_widget_picker">Schaltflächen auswählen, die angezeigt werden sollen</string>
     <string name="title_widget_order">Reihenfolge</string>
@@ -1695,9 +1705,7 @@
     <string name="cm_brightness_mode_auto">Auto</string>
     <string name="cm_brightness_mode_dim">Dunkel</string>
     <string name="pref_network_mode_title">Netzwerkmodi</string>
-    <string name="pref_network_mode_summary">Netzwerkmodi, zwischen denen umgeschaltet wird</string>
     <string name="pref_screentimeout_mode_title">Bildschirm-Timeout</string>
-    <string name="pref_screentimeout_mode_summary">Auswählbare Timeouts für automatische Bildschirmabschaltung</string>
     <string name="pref_ring_mode_title">Klingelmodi</string>
     <string name="pref_ring_mode_summary">Klingelmodi, zwischen denen umgeschaltet wird</string>
     <string name="cm_sound_mode_silent">Lautlos</string>
@@ -1705,11 +1713,9 @@
     <string name="cm_sound_mode_sound">Ton</string>
     <string name="cm_sound_mode_soundVibrate">Ton+Vibration</string>
     <string name="pref_flash_mode_title">Taschenlampe</string>
-    <string name="pref_flash_mode_summary">Helligkeit der Taschenlampe</string>
 
     <!-- Power Widget, Haptic feedback #CM -->
     <string name="expanded_haptic_feedback_title">Haptisches Feedback</string>
-    <string name="expanded_haptic_feedback_summary">Haptisches Feedback ein/ausschalten</string>
 
     <!-- Status bar #CM -->
     <string name="status_bar_title">Statusleiste</string>
@@ -1729,6 +1735,10 @@
     <string name="status_bar_signal_text_show_bars">Nur Balken</string>
     <string name="status_bar_signal_text_show_text">Signalstärke (nur Wert)</string>
     <string name="status_bar_signal_text_hidden">Versteckt</string>
+
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Benachrichtigungs-Zähler</string>
+    <string name="status_bar_notif_count_summary">Anzahl der anstehenden Benachrichtigungen in der Statusleiste anzeigen</string>
 
     <!-- Lock screen #CM -->
     <string name="lock_screen_title">Bildschirmsperre</string>
@@ -1774,6 +1784,70 @@
     <string name="lockscreen_target_empty">Nicht zugewiesen</string>
     <string name="lockscreen_target_edit_title">Zuordnung bearbeiten</string>
     <string name="lockscreen_target_edit_msg">Anwendung oder Symbol zum Ändern berühren</string>
+
+    <!-- Lock Screen Weather -->
+    <string name="lockscreen_weather_title">Wetter</string>
+    <string name="lockscreen_weather_summary">Wetterinformationen auf dem Sperrbildschirm anzeigen</string>
+    <string name="lockscreen_weather_enabled">Aktiviert</string>
+    <string name="weather_enable">Wetter anzeigen</string>
+    <string name="weather_source">Yahoo! Wetter</string>
+    <string name="weather_use_custom_location">Benutzerdefinierter Standort</string>
+    <string name="weather_geolocated">Über Standortdienste bestimmt</string>
+    <string name="weather_custom_location_dialog_title">Standort eingeben</string>
+    <string name="weather_custom_location_hint">Stadt, Staat/Land</string>
+    <string name="weather_custom_location_title">Standort</string>
+    <string name="weather_show_location_title">Standort anzeigen</string>
+    <string name="weather_show_timestamp_title">Aktualisierungszeit anzeigen</string>
+    <string name="weather_refresh_interval">Aktualisierungsintervall</string>
+    <string name="weather_use_metric">Metrische Einheiten verwenden</string>
+    <string name="weather_retrieve_location_dialog_title">Standort kann nicht bestimmt werden!</string>
+    <string name="weather_retrieve_location_dialog_message">Standortdienste sind deaktiviert.\n\nAktivieren oder benutzerdefinierten Standort festlegen.</string>
+    <string name="weather_retrieve_location_dialog_enable_button">Aktivieren</string>
+    <string name="weather_invert_lowhigh">Anzeigereihenfolge Min/Max-Temperatur tauschen</string>
+
+    <!-- Lock screen Weather - Update frequency -->
+    <string name="weather_refresh_manual">Manuell</string>
+    <string name="weather_refresh_30min">30 Minuten</string>
+    <string name="weather_refresh_60min">60 Minuten</string>
+    <string name="weather_refresh_2hrs">2 Stunden</string>
+    <string name="weather_refresh_4hrs">4 Stunden</string>
+    <string name="weather_refresh_6hrs">6 Stunden</string>
+    <string name="weather_refresh_8hrs">8 Stunden</string>
+
+    <!-- Lock screen Calendar -->
+    <string name="lockscreen_calendar_title">Kalender</string>
+    <string name="lockscreen_calendar_summary">Nächsten Termin auf dem Sperrbildschirm anzeigen</string>
+    <string name="lockscreen_calendar_enabled">Aktiviert</string>
+    <string name="calendar_title">Nächsten Termin anzeigen</string>
+    <string name="calendars_title">Kalender</string>
+    <string name="calendars_summary">Termine aus diesen Kalendern berücksichtigen</string>
+    <string name="calendar_reminders_only_title">Nur Erinnerungen</string>
+    <string name="calendar_reminders_only_summary">Nur Termine mit Erinnerungen berücksichtigen</string>
+    <string name="calendar_lookahead_title">Zeitraum</string>
+    <string name="calendar_show_location_title">Ort anzeigen</string>
+    <string name="calendar_show_description_title">Beschreibung anzeigen</string>
+
+    <!-- Lock screen calendar - lookahead -->
+    <string name="calendar_lookahead_3hrs">3 Stunden</string>
+    <string name="calendar_lookahead_6hrs">6 Stunden</string>
+    <string name="calendar_lookahead_12hrs">12 Stunden</string>
+    <string name="calendar_lookahead_1day">1 Tag</string>
+    <string name="calendar_lookahead_3days">3 Tage</string>
+    <string name="calendar_lookahead_1wk">1 Woche</string>
+
+    <!-- Lock screen calendar - event metadata -->
+    <string name="calendar_metadata_none">Nicht anzeigen</string>
+    <string name="calendar_metadata_first_line">Nur die erste Zeile anzeigen</string>
+    <string name="calendar_metadata_all">Alles anzeigen</string>
+
+    <!-- Lock screen background -->
+    <string name="lockscreen_custom_background_title">Hintergrund</string>
+    <string name="lockscreen_custom_background_dialog_title">Farbe auswählen</string>
+    <string name="lockscreen_background_result_successful">Hintergrund geändert</string>
+    <string name="lockscreen_background_result_not_successful">Hintergrund nicht geändert</string>
+    <string name="lockscreen_background_color_fill">Farbfüllung</string>
+    <string name="lockscreen_background_custom_image">Benutzerdefiniertes Bild</string>
+    <string name="lockscreen_background_default_wallpaper">Standardbild</string>
 
     <!-- Screen security - Screen security  #CM -->
     <string name="screen_security_category">Bildschirm-Sicherheit</string>
@@ -1867,11 +1941,16 @@
     <!-- Setting checkbox title for Whether debugging should run over TCP/IP. -->
     <string name="adb_over_network">ADB über Netzwerk</string>
     <string name="adb_over_network_summary">TCP/IP Debugging über Netzwerkschnittstellen (WLAN, USB Netzwerke, \u2026) aktivieren. Diese Einstellung wird beim Neustart zurückgesetzt.</string>
+
     <!-- Warning for Adb over Network -->
     <string name="adb_over_network_warning">WARNUNG: Wenn ADB über Netzwerk eingeschaltet wird, ist dein Gerät anfällig für das Eindringen Fremder aus allen verbundenen Netzwerken - auch aus einem GSM-Datennetzwerk!\n\nNur nutzen, wenn du mit einem vertrauenswürdigen Netzwerk verbunden bist.\n\nMöchtest du diese Funktion wirklich einschalten?</string>
+
     <!-- Kill app long-press back  -->
     <string name="kill_app_longpress_back">App beenden</string>
     <string name="kill_app_longpress_back_summary">Gedrückt halten der Zurück-Taste beendet die Anwendung im Vordergrund.</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Hostname des Geräts</string>
 
     <!-- About device screen, version of modification of Android. #CM -->
     <string name="mod_version">CyanogenMod-Version</string>
@@ -1912,9 +1991,13 @@
     <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_connectionoverrides_title">Verbindungen festlegen</string>
     <string name="profile_volumeoverrides_title">Lautstärke festlegen</string>
+    <string name="profile_vibratoroverrides_title">Vibration festlegen</string>
     <string name="connection_state_disabled">Deaktivieren</string>
     <string name="connection_state_enabled">Aktivieren</string>
     <string name="volume_override_summary">Gesetzt auf</string>
+    <string name="vibrator_state_disabled">Deaktivieren</string>
+    <string name="vibrator_state_enabled">Aktivieren</string>
+    <string name="vibrator_state_silent">Nur wenn lautlos</string>
 
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profile</string>
@@ -1962,6 +2045,14 @@
     <string name="profile_lockmode_default_summary">Nicht modifizieren</string>
     <string name="profile_lockmode_insecure_summary">Unsichere Sperre</string>
     <string name="profile_lockmode_disabled_summary">Nicht sperren</string>
+    <string name="profile_airplanemode_title">Flugmodus</string>
+    <string name="profile_airplanemode_default">Nicht modifizieren</string>
+    <string name="profile_airplanemode_enabled">Aktiviert</string>
+    <string name="profile_airplanemode_disabled">Deaktiviert</string>
+    <string name="profile_airplanemode_default_summary">Nicht modifizieren</string>
+    <string name="profile_airplanemode_enabled_summary">Flugmodes ist aktiviert</string>
+    <string name="profile_airplanemode_disabled_summary">Flugmodus ist deaktiviert</string>
+
 
     <string name="profile_disable_screen_lock_summary">Bildschirmsperre deaktivieren, solange dieses Profil aktiv ist</string> <!-- UNUSED -->
 
@@ -1971,6 +2062,9 @@
     <string name="profile_write_failed">Schreiben des Tags fehlgeschlagen!</string>
     <string name="profile_selected">Profil %1$s aktiviert</string>
     <string name="profile_nfc_text">Nach Verknüpfen eines Profils mit einem NFC-Tag aktiviert ein Berühren des Geräts mit diesem Tag das entsprechende Profil. Eine weitere Berührung aktiviert das vorherige Profil.</string>
+    <string name="profile_unknown_nfc_tag">Unbekanntes Profil</string>
+    <string name="profile_add_nfc_text">Das NFC-Tag verweist auf ein unbekanntes Profil. Das Verknüpfen des NFC-Tags mit einem existierenden Profil ermöglicht es, das entsprechende Profil in Zukunft durch eine Berührung zu aktivieren.</string>
+    <string name="profile_select">Profil auswählen</string>
 
     <!-- Connection override toggles (not all are used at this time ) -->
     <string name="possibleButtons">Mögliche Tasten</string> <!-- UNUSED -->
@@ -2031,6 +2125,11 @@
     <!-- time range preference -->
     <string name="start_time_title">Beginn</string>
     <string name="end_time_title">Ende</string>
+
+    <!-- Electron Beam -->
+    <string name="display_category_animation_options_title">Animationen</string>
+    <string name="display_electron_beam_animation_on_title">Einschalten animieren</string>
+    <string name="display_electron_beam_animation_off_title">Ausschalten animieren</string>
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Aufwecken</string>
@@ -2117,4 +2216,41 @@
     <string name="link_volume_ringtones_toast">Überprüfe die Lautstärke von Klingelton und Benachrichtigungen.</string>
     <string name="link_volume_mutes">Klingelton und Benachrichtigungen gemeinsam stummschalten</string>
 
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_restore_title">Begrenzte Kopfhörerlautstärke</string>
+    <string name="safe_headset_restore_summary">Schützt beim Einstecken des Kopfhörers vor zu hoher Lautstärke</string>
+
+    <!-- Advanced tethering settings -->
+    <string name="tethering_advanced_text">Erweitert</string>
+    <string name="tethering_lease_time_text">DHCP-Lease-Gültigkeit</string>
+    <string name="dhcp_lease_30mn">30 Minuten</string>
+    <string name="dhcp_lease_1h">1 Stunde (Standard)</string>
+    <string name="dhcp_lease_2h">2 Stunden</string>
+    <string name="dhcp_lease_4h">4 Stunden</string>
+    <string name="dhcp_lease_6h">6 Stunden</string>
+    <string name="dhcp_lease_12h">12 Stunden</string>
+    <string name="dhcp_lease_24h">24 Stunden</string>
+
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Auswahl-Benachrichtigung</string>
+    <string name="ime_switcher_notify_summary">Benachrichtigung zur Auswahl der Eingabemethode in der Statusleiste anzeigen</string>
+
+    <!-- Stylus Icon -->
+    <string name="stylus_icon_enabled_title">Stift-Symbol</string>
+    <string name="stylus_icon_enabled_summary">Zeiger einblenden, wenn ein Stift verwendet wird</string>
+
+    <string name="increasing_ring_title">Ansteigender Klingelton</string>
+    <!-- Sound settings screen, the caption of the checkbox for making incoming calls increas in volume -->
+    <string name="checkbox_increasing_ring">Aktivieren</string>
+    <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
+    <string name="increasing_ring_min_volume_title">Anfangslautstärke</string>
+    <string name="increasing_ring_volume_notice">Hinweis:\nDa die Anfangslautstärke größer als die Klingeltonlautstärke ist, wird der Klingelton mit der Klingeltonlautstärke abgespielt.</string>
+    <string name="increasing_ring_interval_title">Erhöhungs-Intervall</string>
+    <string name="increasing_ring_interval_eachring">Bei jedem Klingelton</string>
+    <string name="increasing_ring_interval_half_second">0,5 Sekunden</string>
+    <string name="increasing_ring_interval_1second">1 Sekunde</string>
+    <string name="increasing_ring_interval_2seconds">2 Sekunden</string>
+    <string name="increasing_ring_interval_3seconds">3 Sekunden</string>
+    <string name="increasing_ring_interval_5seconds">5 Sekunden</string>
+    <string name="increasing_ring_interval_10seconds">10 Sekunden</string>
 </resources>
